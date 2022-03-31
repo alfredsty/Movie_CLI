@@ -18,9 +18,9 @@ public class Main {
         movies.add(new Movie("경관의 피", 7.5, "22.01.05"));
 
 
-        Collections.sort(movies, Collections.reverseOrder());
+        Collections.sort(movies, Collections.reverseOrder()); //movies를 오름차순으로 정렬
 
-        for (Movie m : movies) {
+        for (Movie m : movies) { //정리된 movies를 순차적으로 출력함.
             System.out.println(m.toString());
         }
     }
