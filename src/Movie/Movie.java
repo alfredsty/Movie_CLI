@@ -1,6 +1,6 @@
 package Movie;
 
-public class Movie implements Comparable<Movie> {
+public class Movie implements Comparable<Movie> { // Comparable라는 인터페이를 상속받는다. 인터페이스에서 사용할 객체 Movie를 선언.
     // 필드
     private String title;
     private double score;
@@ -46,10 +46,10 @@ public class Movie implements Comparable<Movie> {
     }   //외부에서 주어진 date값을 필드값으로 수정
 
     @Override //재정의 함수
-    public int compareTo(Movie m) {     // TODO주석 달아야함...
+    public int compareTo(Movie m) {     // dSCore1과 dSCore2를 비교하는 함수 compareTo
         Double dSCore1 = this.score;
-        Double dScore2 = m.score;
-        int result = dSCore1.compareTo(dSCore1);
+        Double dSCore2 = m.score;
+        int result = dSCore1.compareTo(dSCore2);
         if(result < 0 ){
             return -1;
         }else if(result > 0) {
