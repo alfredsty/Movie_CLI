@@ -45,7 +45,7 @@ public class Movie implements Comparable<Movie> {
         this.date = date;
     }   //외부에서 주어진 date값을 필드값으로 수정
 
-    @Override
+    @Override //재정의 함수
     public int compareTo(Movie m) {     // TODO주석 달아야함...
         Double dSCore1 = this.score;
         Double dScore2 = m.score;
